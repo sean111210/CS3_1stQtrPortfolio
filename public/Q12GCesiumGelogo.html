@@ -15,9 +15,13 @@
     <p> Total Meal: <span id="result"> </span> </p>
      <script>
         function totalMeal() {
+            let mealPrice = mp.value
+            let tip = tip.value
+            let serviceCharge = sc.value
+
             let totalCost = mp + tip + (sc / 100 * mp)
-            let total = totalCost.toFixed(2);
-            result.innerHTML = <p> $(total) </p>
+            let total = totalCost.toFixed(2)
+            result.innerHTML = `<p> ${total} </p>`
         }
      </script>
 </body>
