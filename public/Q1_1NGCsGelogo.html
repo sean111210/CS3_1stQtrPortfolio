@@ -1,0 +1,19 @@
+
+<body>
+    <p> Hello </p>
+    <script>
+        let age = window.prompt(`What is your age?`, `18`);
+        let maxAge = window.prompt(`What is your max age?`, `100`);
+        let numPerDay = window.prompt(`What is your number per day?`, `100`);
+                
+        let yes = window.confirm(`Is your age ${age}, your max age ${maxAge}, and your number per day ${numPerDay}?`);
+        let totalRequired = (numPerDay * 365) * (maxAge - age);
+
+        if (yes == true) {
+            console.log(`You will need ${totalRequired} to last you until the ripe old age of ${maxAge}`);
+        }
+        else {
+            window.alert(`Run the code again.`);
+        }
+    </script>
+</body>
